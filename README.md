@@ -66,6 +66,7 @@ Steps:
 If you feel lazy and don't want to install ruby to test the example you can run the code challenge in docker:
 
 `# docker build -t ruby-challenge .`
+
 `# docker run -it ruby-challenge`
 
 If you don't see anything in the output means that the examples passed, otherwise you should see the respective errors.
