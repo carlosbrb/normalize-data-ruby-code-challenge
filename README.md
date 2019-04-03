@@ -38,4 +38,35 @@ end
 ```
 
 ## Implemented solution
-TBD
+
+Basically I created a class that groups all the business logic for the normalization of cars data provided in the example. You could have used a different class name such as CarNormalization to be more descriptive, but I preferred to name it Car to maintain simplicity in this particular example.
+The usage examples can be found in the code documentation or just running `rdoc` in the console.
+
+### Useful documentation and core concepts about implementation
+
+- https://ruby-doc.org/core-2.6.1/Hash.html
+- https://ruby-doc.org/core-2.6.1/Object.html#method-i-instance_variables
+- https://ruby-doc.org/core-2.6.1/Enumerable.html
+- https://ruby-doc.org/core-2.6.1/Comparable.html#method-i-between-3F
+
+
+## Running the program
+
+Ruby 2.6.1 version was used for this example. This tutorial assumes that you have ruby 2.6.1 installed. If not, check this link: https://www.ruby-lang.org/en/documentation/installation/
+
+Steps:
+
+1. Clone the project
+2. Run in the console
+
+`# ruby normalize.rb`
+
+## Run in Docker
+
+If you feel lazy and don't want to install ruby to test the example you can run the code challenge in docker:
+
+`# docker build -t ruby-challenge .`
+`# docker run -it ruby-challenge`
+
+If you don't see anything in the output means that the examples passed, otherwise you should see the respective errors.
+
