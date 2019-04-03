@@ -1,6 +1,16 @@
 # frozen_string_literal: true
 
+# :category: Business Class
+#
+# Normalizes the cars data from different sources.
+#
+# Usage example
+#
+#   car = Car.new {:year=>'2018', :make=>'fo', :model=>'focus', :trim=>'blank'}
+#   car.normalize
+#
 class Car
+  # Car attributes readers.
   attr_reader :year, :make, :model, :trim
 
   def initialize(attrs = {})
